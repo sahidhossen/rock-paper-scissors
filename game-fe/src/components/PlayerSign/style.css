@@ -1,0 +1,114 @@
+.player-sign,
+.player-sign-container {
+	display: block;
+	height: 150px;
+	width: 100%;
+	background-size: contain !important;
+}
+.sign-rock {
+	background: url('./rock.png') no-repeat;
+}
+.sign-paper {
+	background: url('./paper.png') no-repeat;
+}
+.sign-secissors {
+	background: url('./secissors.png') no-repeat;
+}
+
+.sign-secissors {
+	background: url('./secissors.png') no-repeat;
+}
+.pending-decision .player-sign {
+	background: url('./shake.png') no-repeat !important;
+}
+.player-1 .pending-decision .player-sign-container {
+	animation-duration: 1.5s;
+	animation-fill-mode: both;
+	animation-name: shaking_animation_left;
+	transform-origin: left top;
+}
+
+.player-2 .pending-decision .player-sign-container {
+	animation-duration: 1.5s;
+	animation-fill-mode: both;
+	animation-name: shaking_animation_right;
+	transform-origin: right top;
+}
+
+@-webkit-keyframes shaking_animation_left {
+	0%,
+	to {
+		-webkit-transform: rotate(0) translateX(0) translateY(0);
+		transform: rotate(0) translateX(0) translateY(0);
+	}
+	15%,
+	45%,
+	75% {
+		-webkit-transform: rotate(-20deg) translateX(-40px) translateY(0);
+		transform: rotate(-20deg) translateX(-40px) translateY(0);
+	}
+	30%,
+	60%,
+	90% {
+		-webkit-transform: rotate(0) translateX(0) translateY(0);
+		transform: rotate(0) translateX(0) translateY(0);
+	}
+}
+@keyframes shaking_animation_left {
+	0%,
+	to {
+		-webkit-transform: rotate(0) translateX(0) translateY(0);
+		transform: rotate(0) translateX(0) translateY(0);
+	}
+	15%,
+	45%,
+	75% {
+		-webkit-transform: rotate(-20deg) translateX(-40px) translateY(0);
+		transform: rotate(-20deg) translateX(-40px) translateY(0);
+	}
+	30%,
+	60%,
+	90% {
+		-webkit-transform: rotate(0) translateX(0) translateY(0);
+		transform: rotate(0) translateX(0) translateY(0);
+	}
+}
+
+@-webkit-keyframes shaking_animation_right {
+	0%,
+	to {
+		-webkit-transform: rotate(0) translateX(0) translateY(0);
+		transform: rotate(0) translateX(0) translateY(0);
+	}
+	15%,
+	45%,
+	75% {
+		-webkit-transform: rotate(20deg) translateX(45px) translateY(0);
+		transform: rotate(20deg) translateX(45px) translateY(0);
+	}
+	30%,
+	60%,
+	90% {
+		-webkit-transform: rotate(0) translateX(0) translateY(0);
+		transform: rotate(0) translateX(0) translateY(0);
+	}
+}
+@keyframes shaking_animation_right {
+	0%,
+	to {
+		-webkit-transform: rotate(0) translateX(0) translateY(0);
+		transform: rotate(0) translateX(0) translateY(0);
+	}
+	15%,
+	45%,
+	75% {
+		-webkit-transform: rotate(20deg) translateX(45px) translateY(0);
+		transform: rotate(20deg) translateX(45px) translateY(0);
+	}
+	30%,
+	60%,
+	90% {
+		-webkit-transform: rotate(0) translateX(0) translateY(0);
+		transform: rotate(0) translateX(0) translateY(0);
+	}
+}

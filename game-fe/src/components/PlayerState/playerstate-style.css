@@ -1,0 +1,10 @@
+.player-status {
+	display: flex;
+	align-items: center;
+	min-height: 300px;
+}
+
+.player-status h3 {
+	width: 100%;
+	text-align: center;
+}

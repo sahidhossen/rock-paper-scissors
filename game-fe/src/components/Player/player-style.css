@@ -1,0 +1,37 @@
+.player-1,
+.player-2 {
+	position: relative;
+}
+.player-position {
+	border: 1px solid #dfdfdf;
+	min-height: 300px;
+	width: 100%;
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+}
+
+.player-2 .player-sign {
+	transform: scaleX(-1);
+}
+
+.gaming-controls {
+	position: absolute;
+	height: 60px;
+	bottom: 10px;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+.gaming-controls span {
+	margin-right: 10px;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 100%;
+	border: 1px solid red;
+	line-height: 0;
+}
+.gaming-controls span svg {
+	width: 60px;
+}
