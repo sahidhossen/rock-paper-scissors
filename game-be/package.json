@@ -1,0 +1,23 @@
+{
+	"name": "game-be",
+	"version": "1.0.0",
+	"description": "Rock, paper and scissors backend API\"",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon --watch src -e js ./src/index.js"
+	},
+	"keywords": [
+		"game",
+		"backend"
+	],
+	"author": "sahid",
+	"license": "ISC",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.17.3",
+		"nodemon": "^2.0.15"
+	},
+	"devDependencies": {
+		"dotenv": "^16.0.0"
+	}
+}
