@@ -2,9 +2,45 @@
 	display: flex;
 	align-items: center;
 	min-height: 300px;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .player-status h3 {
 	width: 100%;
 	text-align: center;
+	font-size: 2.4em;
+}
+.play-btn {
+	display: inline-block;
+	background: #e05757;
+	color: #ffffff;
+	padding: 10px 20px;
+	font-weight: 300;
+	border-radius: 3px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+.gaming-rules {
+	position: relative;
+	margin-bottom: 50px;
+}
+.gaming-rules .group-btns {
+	display: flex;
+	border-radius: 3px;
+	background: #e62649;
+}
+
+.gaming-rules .group-btns .btn {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 16px;
+	padding: 10px 5px;
+	border-right: 1px solid white;
+}
+.gaming-rules .group-btns .btn.disabled {
+	background: #e97288;
+	cursor: not-allowed;
 }

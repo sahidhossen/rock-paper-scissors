@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import Header from './components/Header';
 import GamingBoard from './components/GamingBoard';
-import { storeType } from './store';
+import { storeType, useActions } from './store';
 import './App.css';
 
 const App = () => {
 	const { rounds } = useSelector((store: storeType) => store.game);
-	console.log('working');
+	const { InitiateGame } = useActions();
+
+	useEffect(() => {
+		setTimeout(() => {
+			// Initially load game ager 2 second
+			InitiateGame();
+		}, 2000);
+	});
 	return (
 		<div className="container-full">
 			<Header />

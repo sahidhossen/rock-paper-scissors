@@ -11,6 +11,8 @@
 }
 .rounds-title {
 	text-align: center;
+	font-size: 2em;
+	font-weight: 300;
 }
 .game-label {
 	height: 100px;
@@ -31,7 +33,6 @@
 	flex: 1;
 }
 .flex-2 {
-	border: 1px solid red;
 	flex: 2;
 }
 

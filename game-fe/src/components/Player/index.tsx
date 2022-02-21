@@ -1,4 +1,5 @@
 import React, { MouseEvent } from 'react';
+import { DICES } from '../../constants';
 import PlayerSign from '../PlayerSign';
 import { RockIcon, PaperIcon, ScissorsIcon } from './icons';
 import './player-style.css';
@@ -8,15 +9,16 @@ type playerProps = {
 	point: number;
 	playerState: string;
 	isPending: boolean;
+	gamingRule: number;
 	label?: string;
-	onSelect?: (control: string, player: number) => void;
+	onSelect?: (control: string) => void;
 };
 
 const Player = (props: playerProps) => {
-	const { isPending = false, playerNumber = 1, point = 0, playerState = 'rock', label = 'Win', onSelect } = props;
+	const { isPending = false, gamingRule, playerNumber = 1, point = 0, playerState, label = 'Win', onSelect } = props;
 
 	const onSelectControl = (control: string) => (event: MouseEvent<HTMLButtonElement>) => {
-		onSelect?.(control, playerNumber);
+		onSelect?.(control);
 	};
 
 	const classNames = isPending ? 'player-position pending-decision' : 'player-position';
@@ -30,15 +32,15 @@ const Player = (props: playerProps) => {
 			<div className={classNames}>
 				<PlayerSign sign={playerState} />
 			</div>
-			{playerNumber === 1 && (
+			{playerNumber === 1 && gamingRule === 1 && (
 				<div className="gaming-controls">
-					<span className="rock-icon icon" role="button" onClick={onSelectControl('rock')}>
+					<span className="rock-icon icon" role="button" onClick={onSelectControl(DICES.ROCK)}>
 						<RockIcon />
 					</span>
-					<span className="paper-icon icon" role="button" onClick={onSelectControl('paper')}>
+					<span className="paper-icon icon" role="button" onClick={onSelectControl(DICES.PAPER)}>
 						<PaperIcon />
 					</span>
-					<span className="scissors-icon icon" role="button" onClick={onSelectControl('secissors')}>
+					<span className="scissors-icon icon" role="button" onClick={onSelectControl(DICES.SECISSOR)}>
 						<ScissorsIcon />
 					</span>
 				</div>

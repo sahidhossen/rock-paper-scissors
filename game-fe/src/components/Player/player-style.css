@@ -4,7 +4,7 @@
 }
 .player-position {
 	border: 1px solid #dfdfdf;
-	min-height: 300px;
+	min-height: 400px;
 	width: 100%;
 	position: relative;
 	display: flex;
@@ -29,9 +29,14 @@
 	cursor: pointer;
 	display: inline-block;
 	border-radius: 100%;
-	border: 1px solid red;
 	line-height: 0;
 }
 .gaming-controls span svg {
 	width: 60px;
+}
+.game-loading .gaming-controls span svg circle {
+	fill: #e39c9c;
+}
+.game-loading .gaming-controls span {
+	cursor: not-allowed;
 }
