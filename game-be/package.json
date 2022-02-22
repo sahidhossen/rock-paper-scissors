@@ -4,7 +4,8 @@
 	"description": "Rock, paper and scissors backend API\"",
 	"main": "index.js",
 	"scripts": {
-		"start": "nodemon --watch src -e js ./src/index.js"
+		"start": "nodemon --watch src -e js ./src/index.js",
+		"cli-game": "node ./src/cli/index.js"
 	},
 	"keywords": [
 		"game",
@@ -15,6 +16,7 @@
 	"dependencies": {
 		"cors": "^2.8.5",
 		"express": "^4.17.3",
+		"inquirer": "^8.2.0",
 		"joi": "^17.6.0",
 		"nodemon": "^2.0.15"
 	},

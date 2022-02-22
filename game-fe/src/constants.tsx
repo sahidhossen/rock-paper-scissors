@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://localhost:6001/api';
+export const BASE_URL = 'http://localhost:9001/api';
 
 export const ACTION_TYPES = {
 	INITIATE_GAME: 'INITIATE_GAME',
