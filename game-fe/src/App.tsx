@@ -19,7 +19,9 @@ const App = () => {
 		<div className="container-full">
 			<Header />
 			<div className="container">
-				<h3 className="rounds-title">Rounds {rounds} </h3>
+				<h3 className="rounds-title" data-test="rounds">
+					Rounds {rounds}
+				</h3>
 				<GamingBoard />
 			</div>
 		</div>

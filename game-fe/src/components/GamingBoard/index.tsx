@@ -60,7 +60,7 @@ const GamingBoard = () => {
 	};
 
 	return (
-		<div className={`gaming-board d-flex ${!start && 'game-loading'}`}>
+		<div className={`gaming-board d-flex ${!start && 'game-loading'}`} data-test="gaming-board">
 			<Player
 				playerNumber={1}
 				isPending={pending_decision}

@@ -1,7 +1,7 @@
 import { AnyAction } from 'redux';
 import { GAMING_RULES, ACTION_TYPES } from '../../constants';
 
-const initialState = {
+export const initialState = {
 	start: false,
 	rounds: 0,
 	tie: 0,

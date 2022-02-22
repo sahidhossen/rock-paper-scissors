@@ -4,7 +4,9 @@ import reducers from './reducers';
 import * as actions from './actions';
 import thunk from 'redux-thunk';
 
-export const store = createStore(reducers, {}, applyMiddleware(thunk));
+export const middlewares = applyMiddleware(thunk);
+
+export const store = createStore(reducers, {}, middlewares);
 
 export const useActions = () => {
 	const dispatch = useDispatch();
